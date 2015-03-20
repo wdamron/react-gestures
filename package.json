@@ -1,0 +1,31 @@
+{
+  "name": "react-gestures",
+  "version": "0.1.0",
+  "description": "React gesture recognizers",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "./node_modules/.bin/babel  src --out-dir lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/bh5-js/react-gestures.git"
+  },
+  "keywords": [
+    "react",
+    "gestures",
+    "events",
+    "touch",
+    "ios",
+    "android",
+    "mobile"
+  ],
+  "author": "Bodhi5, Inc <info@bodhi5.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bh5-js/react-gestures/issues"
+  },
+  "homepage": "https://github.com/bh5-js/react-gestures",
+  "devDependencies": {
+    "babel": "^4.7.16"
+  }
+}
