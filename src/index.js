@@ -75,7 +75,7 @@ class Gestures extends React.Component {
       return this.resetState();
     }
     if (ge.gesture.duration > 0 ) {
-      this[__handleTapGesture__]('onTap', ge);
+      this[__handleTapGesture__](ge);
     }
     this.resetState();
   }
