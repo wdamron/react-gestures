@@ -41,7 +41,7 @@ class Gestures extends React.Component {
   }
 
   handleTouchStart(e) {
-    [__emitEvent__]('onTouchStart', e);
+    this[__emitEvent__]('onTouchStart', e);
 
     this.setState({
       start: Date.now(),
@@ -53,7 +53,7 @@ class Gestures extends React.Component {
 
   handleTouchMove(e) {
     let ge = this.getGestureDetails(e);
-    [__emitEvent__]('onTouchMove', ge);
+    this[__emitEvent__]('onTouchMove', ge);
 
     if (ge.gesture.absX > this.props.swipeThreshold && ge.gesture.absY > this.props.swipeThreshold) {
       this[__handleSwipeGesture__](ge);
@@ -68,7 +68,7 @@ class Gestures extends React.Component {
 
   handleTouchEnd(e) {
     let ge = this.getGestureDetails(e);
-    [__emitEvent__]('onTouchEnd', ge);
+    this[__emitEvent__]('onTouchEnd', ge);
 
     if (this.state.swiping) {
       this[__handleSwipeGesture__](ge);
